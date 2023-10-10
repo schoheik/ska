@@ -59,6 +59,7 @@ tr:hover {
 .centerimg {
   display: block;
   max-width: 100%;
+  min-width: 300px;
   height: auto;
   position: relative;
   z-index:1;
