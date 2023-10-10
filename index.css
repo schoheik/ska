@@ -1,133 +1,174 @@
 h1 {
-    font-family: Verdana;
-    border: thin solid;
-    color: rgb(255,0,0);
-    text-align: center;
+  font-family: Verdana;
+  border: thin solid;
+  color: rgb(255, 0, 0);
+  text-align: center;
+  font-size: 3em;
 }
 
 h2 {
-    font-family: Verdana;
-    border: thin solid;
-    color: rgb(255,0,0);
-    text-align: center;
+  font-family: Verdana;
+  border: thin solid;
+  color: rgb(255, 0, 0);
+  text-align: center;
 }
 
 p {
-    font-family: courier;
-    color: rgb(255, 255, 255);
-    text-size-adjust:auto;
+  font-family: courier;
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
 }
 
 body {
-    background-color: black;
+  background-color: black;
 }
 
 table {
-    font-family: courier;
-    color: rgb(255, 255, 255);
-    width:'70%';
-    overflow: scroll;
-    table-layout: fixed;
-    margin-left: auto;
-    margin-right: auto;
-    border-spacing: 10px;
-    border-collapse: collapse;
+  font-family: courier;
+  color: rgb(255, 255, 255);
+  width: '70%';
+  overflow: scroll;
+  table-layout: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 10px;
+  border-collapse: collapse;
 }
 
-th, td {
-    padding: 15px;
-    text-align: center;
-    font-size:large;
-    border-bottom: 1px solid rgb(255, 255, 255);
-  }
+th,
+td {
+  padding: 15px;
+  text-align: center;
+  font-size: large;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
 
-  tr:hover {background-color: rgb(255,0,0);}
+tr:hover {
+  background-color: rgb(255, 0, 0);
+}
 
+.centerimgparent{
+  position: relative;
+  width: '50%';
+  max-width: 100%;
+  width:auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
 
 .centerimg {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: '70%';
+  display: block;
+  width: '50%';
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  z-index:1;
+}
+
+.layerimg {
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: '50%';
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  z-index:10;
+  filter:grayscale();
 }
 
 .headerback {
-    background-color:black;
-    width:'70%';
+  background-color: black;
+  width: '70%';
 
-    position: sticky;
-    top: 0;
-    z-index: 999;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .headerimg {
-    background-color:black;
-    background-size: cover;
-    background-position: center center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  background-color: black;
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
-    width:'100%';
+  width: '100%';
 
-    position: sticky;
-    top: 0;
-    z-index: 999;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .imprint {
-    text-align:center
+  text-align: center
 }
 
 .card_sm {
-	font-family: arial;
-	padding: 20px;
-	flex-basis: 25%;
-	flex-wrap: wrap;
+  font-family: arial;
+  padding: 20px;
+  flex-basis: 25%;
+  flex-wrap: wrap;
 }
 
 .container_card_sm {
-	display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-	justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 a:link {
-    color: rgb(255, 255, 255);
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:visited {
-    color: rgb(255, 0, 0);
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: rgb(255, 0, 0);
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  
-  a:active {
-    color: yellow;
-    background-color: transparent;
-    text-decoration: underline;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(255, 0, 0);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 0, 0);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.typed-out {
+  font-family: courier;
+  color: rgb(255, 255, 255);
+  text-size-adjust: auto;
+  overflow: hidden;
+  border-right: .15em solid orange;
+  animation:
+    typing 10s forwards;
+  width: 0;
+}
+
+@keyframes typing {
+  from {
+    width: 0
   }
 
-  .typed-out{
-    font-family: courier;
-    color: rgb(255, 255, 255);
-    text-size-adjust:auto;
-    overflow: hidden;
-    border-right: .15em solid orange;
-    animation: 
-      typing 10s forwards;
-    width: 0;
+  to {
+    width: 100%
   }
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+}
+
+@media screen and (min-width: 400px) {
+  p {
+    font-size: 2em;
   }
+}
