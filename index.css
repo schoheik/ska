@@ -59,7 +59,7 @@ tr:hover {
 .centerimg {
   display: block;
   max-width: 100%;
-  min-width: 300px;
+  min-width: 20px;
   height: auto;
   position: relative;
   z-index:1;
@@ -165,8 +165,8 @@ a:active {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 300px) {
   p {
-    font-size: 2em;
+    font-size: 3em;
   }
 }
