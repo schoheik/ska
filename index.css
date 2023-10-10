@@ -47,6 +47,13 @@ tr:hover {
   background-color: rgb(255, 0, 0);
 }
 
+.titelvid{
+  text-align:center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .centerimgparent{
   position: relative;
   max-width: 100%;
@@ -165,8 +172,8 @@ a:active {
   }
 }
 
-@media screen and (max-width: 200px) {
+@media only screen and (max-width: 200px) {
   p {
-    font-size: 12em;
+    font-size: 10px;
   }
 }
