@@ -165,8 +165,8 @@ a:active {
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 200px) {
   p {
-    font-size: 3em;
+    font-size: 12em;
   }
 }
