@@ -172,7 +172,7 @@ a:active {
   }
 }
 
-@media only screen and (max-width: 200px) {
+@media screen and (max-width: 768px) {
   p {
     font-size: 88px;
   }
