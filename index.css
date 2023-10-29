@@ -26,7 +26,7 @@ body {
 table {
   font-family: courier;
   color: rgb(255, 255, 255);
-  width: '70%';
+  width: 100%;
   overflow: scroll;
   table-layout: fixed;
   margin-left: auto;
@@ -109,6 +109,8 @@ video {
 
 .headerback {
   background-color: black;
+  max-height: 20%;
+  height: 10%;
   align-self: auto;
 
   position: sticky;
