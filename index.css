@@ -143,6 +143,7 @@ tr:hover {
   justify-self: start;
   max-height: 176px;
   max-width: 300px;
+  width: '10%';
   background-color: black;
 }
 
@@ -154,6 +155,7 @@ tr:hover {
 
 .headersmelement {
   max-height: 176px;
+  width: '10%';
 }
 
 .contact-content {
