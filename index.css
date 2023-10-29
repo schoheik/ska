@@ -55,14 +55,6 @@ tr:hover {
 video {
   display: block;
   margin: 0 auto;
-}
-
-.titelvid{
-  display: flex;
-  justify-content: center;
-/*   margin: auto;
-  margin-left: auto;
-  margin-right: auto; */
   max-width: 100%;
   max-height: 100%;
 }
