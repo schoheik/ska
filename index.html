@@ -5,11 +5,26 @@
     <title>Skarabaeus</title>
     <link rel="stylesheet" href="index.css">
     <script src="script.js"></script> 
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 </head>
 
 <body>
     <div class='headerback'>
+        <img src="images/booknow.png" class='headercontact' alt="Booking" id="openContact">
         <img title="Headerimg" src="images/Logo_rot_schwarz.png" alt="Logo" class="headerimg">
+        <div class='headersm'>
+            <a href='https://www.instagram.com/skarabaeus.band/'><img src="images/insta2.jpg" class='headersmelement' alt="Booking"></button></a>
+            <a href='https://www.youtube.com/@skarabaeusband3590'><img src="images/youtube.jpg" class='headersmelement' alt="Booking"></button></a>
+        </div>
+    </div>
+
+    <div id="contact-popup" class="popup">
+        <div class="contact-content">
+            <h1>Contact:</h1>
+            <p>email undso</p>
+        </div>
     </div>
 
     <center>
@@ -135,13 +150,8 @@
     <p>Click on the members in the picture to get information about us!!</p>
 
     <div class="container">
-        <img title="Click on members!" src="images/Band_komplett.jpeg" alt="Band complete">
-
-        <!--<img title="Click on Heiko!" src="im>ages/Band/Heiko.jpeg" class="layerimg">-->
-        <div class="sticker">
-            <img title="Click on Alex!" src="images/Band/Alex_sw_highlight.png" id="AlexBild">
-            <div id="overlayAlex"></div>
-        </div>
+        <img title="Click on members!" src="images/Band_komplett.jpeg" alt="Band complete" class="hintergrund" id="hintergrund">
+        <img title="Click on Alex!" src="images/Band/Alex_sw_highlight.png" class = "sticker" id="sticker" onclick="toggleVisibility()" >
     </div>
 
     <div class="memberpopup" id="AlexPopup">
@@ -209,6 +219,7 @@
         Tel.: +49 170 1466892
     </p>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
