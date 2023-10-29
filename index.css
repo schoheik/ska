@@ -151,11 +151,12 @@ tr:hover {
   align-self: center;
   justify-self: end;
   background-color: black;
+  max-height: 176px;
+  width: '10%';
 }
 
 .headersmelement {
   max-height: 176px;
-  width: '10%';
 }
 
 .contact-content {
