@@ -212,6 +212,8 @@ video {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 100%;
+  max-width: 100%;
 }
 
 a:link {
