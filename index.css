@@ -105,7 +105,7 @@ tr:hover {
 
 .headerback {
   background-color: black;
-/*   width: '70%'; */
+  width: '100%';
 
   position: sticky;
   top: 0;
