@@ -1,5 +1,10 @@
+@font-face {
+  font-family: 'SKA';
+  src: url('font/feast_of_flesh_bb/FEASFBRG.TTF');
+}
+
 h1 {
-  font-family: Verdana;
+  font-family: 'SKA', sans-serif;
   border: thin solid;
   color: rgb(255, 0, 0);
   text-align: center;
@@ -7,7 +12,8 @@ h1 {
 }
 
 h2 {
-  font-family: Verdana;
+  font-family: 'SKA', sans-serif;  
+  /* Verdana; */
   border: thin solid;
   color: rgb(255, 0, 0);
   text-align: center;
@@ -23,35 +29,6 @@ body {
   background-color: black;
 }
 
-table {
-  font-family: courier;
-  color: rgb(255, 255, 255);
-  width: 100%;
-  overflow: scroll;
-  table-layout: fixed;
-  margin-left: auto;
-  margin-right: auto;
-  border-spacing: 10px;
-  border-collapse: collapse;
-}
-
-th,
-td {
-  padding: 15px;
-  text-align: center;
-  font-size: large;
-  border-bottom: 1px solid rgb(255, 255, 255);
-}
-
-tr:hover {
-  background-color: rgb(255, 0, 0);
-}
-
-.button_kontakt {
-  background-color: black;
-  vertical-align: middle;
-}
-
 video {
   display: block;
   margin: 0 auto;
@@ -61,10 +38,116 @@ video {
   height: auto;
 }
 
+/* Header */
+
+.headerback {
+  background-color: black;
+  max-height: 20%;
+  width: auto;
+  align-self: auto;
+
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  display: grid;
+/*   place-content: center; */
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+.headerimg {
+  background-color: black;
+  background-size: cover;
+  background-position: center center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  align-self: center;
+  justify-self: center;
+
+  /* width: 100%; */
+  /* max-height: 100%; */
+  width: auto;
+  max-height: 50%;
+}
+
+.headercontact {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  align-self: center;
+  justify-self: start;
+  background-color: black;
+  width: auto;
+  max-width: 100%;
+  /* max-height: 176px; */
+  max-height: 40%;
+}
+
+.headersm {
+  display: block;
+  align-self: center;
+  justify-self: end;
+  background-color: black;
+  width: 30%;
+  max-height: 100%;
+}
+
+.headersmelement {
+  background-color: black;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.contact-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+
+/* Social Media */
+
+.card_sm {
+  font-family: arial;
+  padding: 20px;
+  flex-basis: 25%;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.container_card_sm {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  max-width: 100%;
+}
+
+/* About us */
 
 .container {
   position: absolute;
   width: 100vw;
+  height: 100vw;
   max-width: 100%;
   max-height: 100%;
 }
@@ -101,125 +184,44 @@ video {
   z-index: 0;
 }
 
+/* Gigs */
 
-
-
-
-
-
-.headerback {
-  background-color: black;
-  max-height: 20%;
-  height: 10%;
-  align-self: auto;
-
-  position: sticky;
-  top: 0;
-  z-index: 999;
-
-  display: grid;
-/*   place-content: center; */
-  grid-template-columns: 1fr 4fr 1fr;
-}
-
-.headerimg {
-  background-color: black;
-  background-size: cover;
-  background-position: center center;
-  display: block;
+table {
+  font-family: courier;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  overflow: scroll;
+  table-layout: fixed;
   margin-left: auto;
   margin-right: auto;
-
-  align-self: center;
-  justify-self: center;
-
-  width: 100%;
-  max-height: 100%;
+  border-spacing: 10px;
+  border-collapse: collapse;
 }
 
-.headercontact {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-  align-self: center;
-  justify-self: start;
-  background-color: black;
-  width: auto;
-  max-width: 100%;
-  max-height: 176px;
+th,
+td {
+  padding: 15px;
+  text-align: center;
+  font-size: large;
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
 
-.headersm {
-  align-self: center;
-  justify-self: end;
-  background-color: black;
-  width: 100%
+tr:hover {
+  background-color: rgb(255, 0, 0);
 }
 
-.headersmelement {
-  background-color: black;
-  max-width: 100%;
-  max-height: 100%;
+.tableimg {
+  max-width: 10%;
+  max-height: 10%;
 }
 
-.contact-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 20px;
-}
-
-.popup {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 2;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Imprint */
 
 .imprint {
   text-align: center
 }
 
-.card_sm {
-  font-family: arial;
-  padding: 20px;
-  flex-basis: 25%;
-  flex-wrap: wrap;
-  max-width: 100%;
-}
-
-.container_card_sm {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 100%;
-  max-width: 100%;
-}
+/* Sonstiges */
 
 a:link {
   color: rgb(255, 255, 255);
