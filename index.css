@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'SKA';
-  src: url('font/feast_of_flesh_bb/FEASFBRG.TTF');
+/*   src: url('font/feast_of_flesh_bb/FEASFBRG.TTF'); */
+  src: url('font/Crimes\ Times\ Six.ttf');
 }
 
 h1 {
@@ -205,6 +206,7 @@ td {
   text-align: center;
   font-size: large;
   border-bottom: 1px solid rgb(255, 255, 255);
+  height: 1%;
 }
 
 tr:hover {
@@ -219,7 +221,8 @@ tr:hover {
 /* Imprint */
 
 .imprint {
-  text-align: center
+  text-align: center;
+  font-size: 1.0em;
 }
 
 /* Sonstiges */
@@ -272,5 +275,8 @@ a:active {
 @media screen and (max-width: 1200px) {
   p {
       font-size: 1.5em;
+  }
+  .imprint {
+    font-size: 1.2em;
   }
 }
