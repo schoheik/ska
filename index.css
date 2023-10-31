@@ -70,6 +70,7 @@ video {
   /* max-height: 100%; */
   width: auto;
   max-height: 50%;
+  max-width: 100%;
 }
 
 .headercontact {
