@@ -124,6 +124,32 @@ video {
   z-index: 2;
 }
 
+.contact-content_h1 {
+  font-family: 'SKA', sans-serif;
+  border: thin solid;
+  color: black;
+  text-align: center;
+  font-size: 3em;
+}
+
+.contact-content_p {
+  font-family: courier;
+  color: black;
+  font-size: 1.2em;
+}
+
+.contact-content_a {
+  font-family: courier;
+  color: black;
+  font-size: 1.2em;
+}
+
+.contact-content_a:hover {
+  color: rgb(255, 0, 0);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 
 /* Social Media */
 
@@ -143,6 +169,7 @@ video {
   max-width: 100%;
   max-width: 100%;
 }
+
 
 /* About us */
 
@@ -216,6 +243,13 @@ tr:hover {
 .tableimg {
   max-width: 10%;
   max-height: 10%;
+}
+
+/* Info */
+.infolinks {
+  font-family: courier;
+  color: rgb(255, 255, 255);
+  font-size: 1.2em; 
 }
 
 /* Imprint */
