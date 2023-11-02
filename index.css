@@ -241,7 +241,8 @@ td {
   text-align: center;
   font-size: large;
   border-bottom: 1px solid rgb(255, 255, 255);
-  height: 1%;
+  height: auto;
+  max-height: 1%;
 }
 
 tr:hover {
@@ -249,8 +250,9 @@ tr:hover {
 }
 
 .tableimg {
-  max-width: 3cap;
-  max-height: 3cap;
+  vertical-align: bottom;
+  max-width: 10%;
+  max-height: 10%;
 }
 
 /* Info */
