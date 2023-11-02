@@ -245,14 +245,22 @@ td {
   max-height: 1%;
 }
 
+.tdinsta {
+  /* height: 100px; */
+  height: 1em;
+}
+
 tr:hover {
   background-color: rgb(255, 0, 0);
 }
 
 .tableimg {
   vertical-align: bottom;
-  max-width: 10%;
-  max-height: 10%;
+  /* max-height: 100px; */
+  max-height: 1em;
+  width: auto;
+/*   max-width: 10%;
+  max-height: 10%; */
 }
 
 /* Info */
