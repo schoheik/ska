@@ -136,18 +136,26 @@ video {
   font-family: courier;
   color: black;
   font-size: 1.2em;
+  display: inline-block;
 }
 
-.contact-content_a {
+.contact-content_a:link {
   font-family: courier;
   color: black;
   font-size: 1.2em;
+  display: inline-block;
 }
 
 .contact-content_a:hover {
   color: rgb(255, 0, 0);
   background-color: transparent;
   text-decoration: underline;
+}
+
+.contact-content_a:visited {
+  color: rgb(238, 156, 160);
+  background-color: transparent;
+  text-decoration: none;
 }
 
 
@@ -241,8 +249,8 @@ tr:hover {
 }
 
 .tableimg {
-  max-width: 10%;
-  max-height: 10%;
+  max-width: 3cap;
+  max-height: 3cap;
 }
 
 /* Info */
