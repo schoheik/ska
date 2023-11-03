@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'SKA';
-/*   src: url('font/feast_of_flesh_bb/FEASFBRG.TTF'); */
+  /*   src: url('font/feast_of_flesh_bb/FEASFBRG.TTF'); */
   src: url('font/Crimes\ Times\ Six.ttf');
 }
 
@@ -13,7 +13,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'SKA', sans-serif;  
+  font-family: 'SKA', sans-serif;
   /* Verdana; */
   border: thin solid;
   color: rgb(255, 0, 0);
@@ -52,7 +52,7 @@ video {
   z-index: 999;
 
   display: grid;
-/*   place-content: center; */
+  /*   place-content: center; */
   grid-template-columns: 1fr 4fr 1fr;
 }
 
@@ -111,6 +111,7 @@ video {
   transform: translate(-50%, -50%);
   background-color: #fff;
   padding: 20px;
+  cursor: pointer;
 }
 
 .popup {
@@ -158,26 +159,69 @@ video {
   text-decoration: none;
 }
 
+.headergif {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 
 /* Social Media */
 
 .card_sm {
-  font-family: arial;
-  padding: 20px;
-  flex-basis: 25%;
-  flex-wrap: wrap;
   max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: red;
+  font-size: 1.2rem;
+  margin-right: 10px;
 }
 
-.container_card_sm {
-  display: flex;
+.sm_carousel_container {
+  /* display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 100%;
-  max-width: 100%;
+  width: 100%; */
+  display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
+.sm_carousel {
+  display: flex;
+  transition: transform 0.5s;
+  justify-content: center; /* Den Inhalt horizontal zentrieren */
+    align-items: center; /* Den Inhalt vertikal zentrieren */
+}
+
+.nav-button {
+  width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    z-index: 2;
+}
+
+.prev {
+  left: 10px;
+  top: 50%; /* Mittig auf der vertikalen Achse positionieren */
+    transform: translateY(-50%); /* Für die exakte Zentrierung */
+  }
+
+.next {
+  right: 10px;
+  top: 50%; /* Mittig auf der vertikalen Achse positionieren */
+    transform: translateY(-50%); /* Für die exakte Zentrierung */
+}
 
 /* About us */
 
@@ -200,9 +244,12 @@ video {
 
 .sticker {
   position: absolute;
-  top: 50%; /* Passen Sie die vertikale Position des Stickers an */
-  left: 12%; /* Passen Sie die horizontale Position des Stickers an */
-  transform: translate(-50%, -50%); /* Zentrieren Sie den Sticker */
+  top: 50%;
+  /* Passen Sie die vertikale Position des Stickers an */
+  left: 12%;
+  /* Passen Sie die horizontale Position des Stickers an */
+  transform: translate(-50%, -50%);
+  /* Zentrieren Sie den Sticker */
 }
 
 
@@ -259,7 +306,7 @@ tr:hover {
   /* max-height: 100px; */
   max-height: 1em;
   width: auto;
-/*   max-width: 10%;
+  /*   max-width: 10%;
   max-height: 10%; */
 }
 
@@ -267,7 +314,7 @@ tr:hover {
 .infolinks {
   font-family: courier;
   color: rgb(255, 255, 255);
-  font-size: 1.2em; 
+  font-size: 1.2em;
 }
 
 /* Imprint */
@@ -326,8 +373,9 @@ a:active {
 
 @media screen and (max-width: 1200px) {
   p {
-      font-size: 1.5em;
+    font-size: 1.5em;
   }
+
   .imprint {
     font-size: 1.2em;
   }
