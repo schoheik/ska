@@ -5,7 +5,8 @@ const carousel = document.querySelector('.sm_carousel');
 const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
 
-let currentIndex = 0;
+/* let currentIndex = 0; */
+let currentIndex = Math.floor(carousel.children.length/2);
 
 contactbutton.onclick = function() {
   contactpopup.style.display = 'block';
@@ -36,7 +37,7 @@ function updateCarousel() {
       const item = carousel.children[i];
       item.classList.remove('selected');
   }
-  const translateX = currentIndex * -200;
+  const translateX = currentIndex * 1;
   carousel.style.transform = `translateX(${translateX}px)`;
 
   /* // Automatisches Zurücksetzen auf das erste Element nach dem letzten Element
