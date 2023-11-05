@@ -187,26 +187,19 @@ video {
 }
 
 .sm_carousel_container {
-  /* display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 100%;
-  width: 100%;
-    */
   display: relative;
- /*  align-items: center; */
   width: 100%;
   overflow: hidden;
   position: relative;
- /*  margin: 0 auto; */
+  margin: 0 auto;
   transition: transform 0.5s;
 }
 .sm_carousel {
   display: flex;
   transition: transform 0.5s;
   justify-content: center;
-  align-items: center;
+  position: relative;
+  /* align-items: center; */
 }
 
 .nav-button {

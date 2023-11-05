@@ -39,14 +39,18 @@ function updateCarousel() {
     item.classList.remove('selected');
 }
 
-  /* const itemWidth = 400; */
   const itemWidth = 100 / carousel.children.length;
-  const itemsCount = carousel.children.length;
+  /* const translateX = 40; */
 
   /* const translateX = -currentIndex * itemWidth + (carousel.offsetWidth / 2 - itemWidth / 2); */
-  const translateX = -currentIndex *itemWidth;
-  /* alert(translateX) */
-  carousel.style.transform = `translateX(${translateX}px}`;
+  /* const translateX = -currentIndex *itemWidth; */
+  const translateX = (currentIndex-3)*itemWidth;
+  alert(translateX)
+  /* main_carousel.style.transform = `translateX(${translateX}px}`; */
+  /* carousel.style.transform = translateX('${translateX}%'); */
+  carousel.style.right = translateX + '%';
+
+  carousel.style.transform = 'translateX(${translateX}%)';
 
   const selectedItem = carousel.children[currentIndex];
   selectedItem.classList.add('selected');
