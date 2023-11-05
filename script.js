@@ -8,6 +8,7 @@ const nextButton = document.getElementById('next');
 
 /* let currentIndex = 0; */
 let currentIndex = Math.floor(carousel.children.length/2);
+let startIndex = currentIndex;
 
 contactbutton.onclick = function() {
   contactpopup.style.display = 'block';
@@ -39,25 +40,19 @@ function updateCarousel() {
     item.classList.remove('selected');
 }
 
-  const itemWidth = 100 / carousel.children.length;
-  /* const translateX = 40; */
+  /* const itemWidth = 100 / carousel.children.length; */
+  const itemWidth = 420;
+  const translateX = (currentIndex-startIndex)*itemWidth;
 
-  /* const translateX = -currentIndex * itemWidth + (carousel.offsetWidth / 2 - itemWidth / 2); */
-  /* const translateX = -currentIndex *itemWidth; */
-  const translateX = (currentIndex-3)*itemWidth;
-  alert(translateX)
-  /* main_carousel.style.transform = `translateX(${translateX}px}`; */
-  /* carousel.style.transform = translateX('${translateX}%'); */
-  carousel.style.right = translateX + '%';
+  /* const translateX = (currentIndex-3)*itemWidth; */
+  carousel.style.right = translateX + 'px';
 
-  carousel.style.transform = 'translateX(${translateX}%)';
+/*   carousel.style.transform = 'translateX(${translateX}%)'; */
 
   const selectedItem = carousel.children[currentIndex];
   selectedItem.classList.add('selected');
 }
 
-
-alert('newversion')
 // Initialisierung des Carousels
 updateCarousel();
 

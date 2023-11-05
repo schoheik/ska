@@ -177,7 +177,7 @@ video {
   background-color: black;
   color: red;
   font-size: 1.2rem;
-  margin-right: 10px;
+  margin: 10px;
   width: 400px;
   transition: transform 0.5s; /* Übergangseigenschaft für die Vergrößerung */
 }
