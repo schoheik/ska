@@ -24,26 +24,13 @@ window.onclick = function(event) {
 
 nextButton.addEventListener('click', () => {
   currentIndex = (currentIndex + 1) % carousel.children.length;
-  alert("Right!");
   updateCarousel();
 });
 
 prevButton.addEventListener('click', () => {
   currentIndex = (currentIndex - 1 + carousel.children.length) % carousel.children.length;
-  alert("Left!");
   updateCarousel();
 });
-
-/* function updateCarousel() {
-  for (let i = 0; i < carousel.children.length; i++) {
-      const item = carousel.children[i];
-      item.classList.remove('selected');
-  }
-  const translateX = currentIndex * 1;
-  carousel.style.transform = `translateX(${translateX}px)`;
-  const selectedItem = carousel.children[currentIndex];
-  selectedItem.classList.add('selected');
-} */
 
 function updateCarousel() {
   for (let i = 0; i < carousel.children.length; i++) {
@@ -51,11 +38,13 @@ function updateCarousel() {
     item.classList.remove('selected');
 }
 
-  const itemWidth = 400;
+  /* const itemWidth = 400; */
+  const itemWidth = 100 / carousel.children.length;
   const itemsCount = carousel.children.length;
-  alert(currentIndex);
 
-  const translateX = -currentIndex * itemWidth + (carousel.offsetWidth / 2 - itemWidth / 2);
+  /* const translateX = -currentIndex * itemWidth + (carousel.offsetWidth / 2 - itemWidth / 2); */
+  const translateX = -currentIndex *itemWidth;
+  alert(translateX)
   carousel.style.transform = `translateX(${translateX}px}`;
 
   const selectedItem = carousel.children[currentIndex];
