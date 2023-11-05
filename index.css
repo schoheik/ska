@@ -199,13 +199,14 @@ video {
   width: 100%;
   overflow: hidden;
   position: relative;
-  margin: 0 auto;
+ /*  margin: 0 auto; */
+  transition: transform 0.5s;
 }
 .sm_carousel {
   display: flex;
   transition: transform 0.5s;
-/*   justify-content: center;
-  align-items: center; */
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-button {

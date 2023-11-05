@@ -2,6 +2,7 @@ var contactpopup = document.getElementById('contact-popup');
 var contactbutton = document.getElementById('openContact');
 
 const carousel = document.querySelector('.sm_carousel');
+const main_carousel = document.querySelector('.sm_carousel_container')
 const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
 
@@ -45,7 +46,7 @@ function updateCarousel() {
   /* const translateX = -currentIndex * itemWidth + (carousel.offsetWidth / 2 - itemWidth / 2); */
   const translateX = -currentIndex *itemWidth;
   alert(translateX)
-  carousel.style.transform = `translateX(${translateX}px}`;
+  main_carousel.style.transform = `translateX(${translateX}px}`;
 
   const selectedItem = carousel.children[currentIndex];
   selectedItem.classList.add('selected');
