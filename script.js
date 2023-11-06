@@ -52,24 +52,16 @@ function updateCarousel() {
     const item = carousel.children[i];
     item.classList.remove('selected');
 }
-
-  /* const itemWidth = 100 / carousel.children.length; */
-  /* const itemWidth = 420; */
-  /* const itemWidth = carousel.offsetWidth / carousel.children.length; */
   const itemWidth = carousel.children[0].offsetWidth;
   const translateX = (currentIndex-startIndex)*itemWidth;
-
-  /* const translateX = (currentIndex-3)*itemWidth; */
   carousel.style.right = translateX + 'px';
-
-/*   carousel.style.transform = 'translateX(${translateX}%)'; */
-
   const selectedItem = carousel.children[currentIndex];
   selectedItem.classList.add('selected');
 }
 
 // Initialisierung des Carousels
 updateCarousel();
+/* alert('newVersion') */
 
 
 let touchstartX = 0
@@ -80,14 +72,53 @@ function whichDirection() {
   if (touchendX > touchstartX) alert("Swipe nach Rechts");
 }
 
-document.querySelector(".swipeDetector").addEventListener('touchstart', evt => {
+carousel.addEventListener('touchstart', evt => {
   touchstartX = evt.changedTouches[0].screenX;
-  console.log ("touchstartX", touchstartX);
 })
 
-document.querySelector(".swipeDetector").addEventListener('touchend', evt => {
+carousel.addEventListener('touchend', evt => {
   touchendX = evt.changedTouches[0].screenX;
-  console.log ("touchendX", touchendXå);
   whichDirection();
 });
 
+
+
+
+/* var touchstartX = 0;
+var touchstartY = 0;
+var touchendX = 0;
+var touchendY = 0;
+
+var gesuredZone = document.getElementById('gesuredZone');
+
+gesuredZone.addEventListener('touchstart', function(event) {
+    touchstartX = event.screenX;
+    touchstartY = event.screenY;
+}, false);
+
+gesuredZone.addEventListener('touchend', function(event) {
+    touchendX = event.screenX;
+    touchendY = event.screenY;
+    handleGesure();
+}, false); 
+
+function handleGesure() {
+    var swiped = 'swiped: ';
+    if (touchendX < touchstartX) {
+        alert(swiped + 'left!');
+    }
+    if (touchendX > touchstartX) {
+        alert(swiped + 'right!');
+    }
+    if (touchendY < touchstartY) {
+        alert(swiped + 'down!');
+    }
+    if (touchendY > touchstartY) {
+        alert(swiped + 'left!');
+    }
+    if (touchendY == touchstartY) {
+        alert('tap!');
+    }
+}
+
+ */
