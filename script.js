@@ -61,7 +61,7 @@ function updateCarousel() {
 
 // Initialisierung des Carousels
 updateCarousel();
-alert('newVersion3')
+alert('newVersion')
 
 
 carousel.addEventListener('swiped-left', alertswipe, true);
@@ -73,3 +73,14 @@ function alertswipe(event) {
 }
 
 
+
+
+
+function openMenue() {
+  var menue = document.getElementById("myMenue");
+  if (menue.style.display === "block") {
+    menue.style.display = "none";
+  } else {
+    menue.style.display = "block";
+  }
+} 
