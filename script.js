@@ -2,7 +2,7 @@ var contactpopup = document.getElementById('contact-popup');
 var contactbutton = document.getElementById('openContact');
 var headerlogo = document.getElementById('headerimg');
 
-/* const mainbody = document.querySelector('body') */
+const smcards = document.querySelectorAll('.card_sm')
 const carousel = document.querySelector('.sm_carousel');
 const main_carousel = document.querySelector('.sm_carousel_container')
 const prevButton = document.getElementById('prev');
@@ -73,11 +73,17 @@ function updateCarousel() {
 
 // Initialisierung des Carousels
 updateCarousel();
-alert('Oddi hat sich verspielt')
+alert('Oddi hat sich nicht verspielt')
 
 
-document.body.addEventListener('swiped-left', swipeCarouselleft, true);
-document.body.addEventListener('swiped-right', swipeCarouselright, true);
+/* document.body.addEventListener('swiped-left', swipeCarouselleft, true);
+document.body.addEventListener('swiped-right', swipeCarouselright, true); */
+
+
+smcards.forEach(function(card) {
+  card.addEventListener('swiped-left', swipeCarouselleft, true);
+  card.addEventListener('swiped-right', swipeCarouselright, true);
+});
 
 function swipeCarouselleft(event) {
   event.preventDefault();
