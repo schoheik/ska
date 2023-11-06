@@ -10,25 +10,35 @@
 </head>
 
 <body>
-    <div class='headerback'>
+    <div class='headerback' id="headerback">
         <img src="images/booknow.png" class='headercontact' alt="Booking" id="openContact">
-        <img id="headerimg" title="Headerimg" src="images/Logo_rot_schwarz.png" alt="Logo" class="headerimg" onclick="openMenue()">
+        <img id="headerimg" title="Headerimg" src="images/Logo_rot_schwarz.png" alt="Logo" class="headerimg"
+            onclick="openMenue()">
         <div class='headersm'>
             <a href='https://www.instagram.com/skarabaeus.band/'><img src="images/insta2.jpg" class='headersmelement'
                     alt="Booking"></a>
             <a href='https://www.youtube.com/@skarabaeusband3590'><img src="images/youtube.jpg" class='headersmelement'
                     alt="Booking"></a>
         </div>
+
+        <div class="topnav" id="myMenue">
+            <div class="topnav_element"><a href="#Social Media" class="topnav_a">Social Media</a></div>
+            <div class="topnav_element"><a href="#Tour" class="topnav_a">Tour</a></div>
+            <div class="topnav_element"><a href="#Past Events" class="topnav_a">Past Events</a></div>
+            <div class="topnav_element"><a href="#About us" class="topnav_a">About us</a></div>
+            <div class="topnav_element"><a href="#Info" class="topnav_a">Info & Imprint</a></div>
+        </div>
+
     </div>
 
     <div id="contact-popup" class="popup">
         <div class="contact-content">
-            <h1 class="contact-content_h1">Kontakt // Contact</h1>
+            <h1 class="contact-content_h1">Contact</h1>
             <p class="contact-content_p">Ruft uns an oder schreibt uns eine Whatsapp oder Email oder Insta-Nachricht:
             </p>
             <p class="contact-content_p">Call us or write via Whatsapp or Mail or Insta: </p>
             <hr>
-            <p class="contact-content_p">Heiko: </p> <a class="contact-content_a" href="tel:00491701466892">+49
+            <p class="contact-content_p">Heiko: </p> <a class="contact-content_a" href="tel:+491701466892">+49
                 1701466892</a>
             <p class="contact-content_p">| </p> <a class="contact-content_a"
                 href="mailto:schoheik@google.com">schoheik@googlemail.com</a> <br>
@@ -36,19 +46,7 @@
     </div>
 
 
-    <div class="topnav">
-        <a href="#home" class="active">Logo</a>
-        <!-- Navigation links (hidden by default) -->
-        <div id="myMenue">
-          <a href="#news">News</a>
-          <a href="#contact">Contact</a>
-          <a href="#about">About</a>
-        </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
+
 
 
 
@@ -62,10 +60,11 @@
         </source>
     </video> -->
 
-    <h1 id="Social Media">Social Media</h1>
-    
+    <h1 id="Social Media" class="anchor">Social Media</h1>
+
     <div class="sm_carousel_container">
-        <button id="prev" class="nav-button prev"><img src="images/left-arrow.png" alt="left" class="nav-button"></button>
+        <button id="prev" class="nav-button prev"><img src="images/left-arrow.png" alt="left"
+                class="nav-button"></button>
         <div class="sm_carousel">
 
             <div class="card_sm">
@@ -253,7 +252,8 @@
                             style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
                             <a href="https://www.instagram.com/p/CyFtZD7oxcz/?utm_source=ig_embed&amp;utm_campaign=loading"
                                 style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
-                                target="_blank">Ein Beitrag geteilt von MetaBrewSociety (@metabrewsociety)</a></p>
+                                target="_blank">Ein Beitrag geteilt von MetaBrewSociety (@metabrewsociety)</a>
+                        </p>
                     </div>
                 </blockquote>
                 <script async src="//www.instagram.com/embed.js"></script>
@@ -348,7 +348,8 @@
                             style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">
                             <a href="https://www.instagram.com/p/CyTLMdGt_Tr/?utm_source=ig_embed&amp;utm_campaign=loading"
                                 style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;"
-                                target="_blank">Ein Beitrag geteilt von Skarabäus (@skarabaeus.band)</a></p>
+                                target="_blank">Ein Beitrag geteilt von Skarabäus (@skarabaeus.band)</a>
+                        </p>
                     </div>
                 </blockquote>
                 <script async src="//www.instagram.com/embed.js"></script>
@@ -458,13 +459,14 @@
             </div> -->
 
         </div>
-        <button id="next" class="nav-button next"><img src="images/right-arrow.png" alt="right" class="nav-button"></button>
+        <button id="next" class="nav-button next"><img src="images/right-arrow.png" alt="right"
+                class="nav-button"></button>
     </div>
-    
+
 
     <br>
 
-    <h1 id="Tour">Tour</h1>
+    <h1 id="Tour" class="anchor">Tour</h1>
 
     <table>
         <tr>
@@ -480,14 +482,14 @@
         </tr>
         <tr>
             <td>2023/12/02</td>
-            <td>Live-Club Bamberg</td>
+            <td>LIVECLUB Bamberg</td>
             <td><a href='https://www.instagram.com/p/CyTLMdGt_Tr/'>
                     <img src="images/instaklein.png" class="tableimg" alt="Social Media Link" />
                 </a></td>
         </tr>
     </table>
 
-    <h1 id="Past Events">Vergangene Termine // Past Events</h1>
+    <h1 id="Past Events" class="anchor">Vergangene Termine // Past Events</h1>
 
     <table>
         <tr>
@@ -553,7 +555,7 @@
         </tr>
         <tr>
             <td>2023/02/20</td>
-            <td>KUFA Bamberg</td>
+            <td>LIVECLUB Bamberg</td>
             <td>
                 <a href='https://www.instagram.com/p/Co6tmhTjCUC/'>
                     <img src="images/instaklein.png" class="tableimg" alt="Social Media Link" />
@@ -562,7 +564,7 @@
         </tr>
     </table>
 
-    <h1 id="About us">Wer wir sind // About us</h1>
+    <h1 id="About us" class="anchor">Wer wir sind // About us</h1>
     <p>Hallo <br> Wir sind Skarabaeus! Wir spielen den besten Ska, Punk und Rock'n'Roll in ganz Franken!
         Wenn ihr unseren Musikstil erkunden wollt, dann geht doch auf unsere Social-Media Kanäle und hört und seht mal
         rein oder kommt einfach zu einem unserer Termine vorbei.<br>
@@ -589,29 +591,31 @@
         <p>Alex Alex Alex</p>
     </div> -->
 
-    <h2 id="Info">Info</h2>
+    <h2 id="Info" class="anchor">Info</h2>
 
     <p>Informationen für Veranstalter:</p>
     <hr>
     <p>Information for event-organizers:</p>
 
-    
+
 
     <table>
         <tr class="trinfo">
-            <td class="tdlast"><a href="doc/Skarabaeus_Buehnenplan.pdf" class="infolinks"><img src="images/pdf.png" class="tableimg" alt="PDF-File" /><br>Bühnenplan</a></td>
-            <td class="tdlast"><a href="doc/Skarabaeus_TechRider.pdf" class="infolinks"><img src="images/pdf.png" class="tableimg" alt="PDF-File" /><br>TechRider</a></td>
+            <td class="tdlast"><a href="doc/Skarabaeus_Buehnenplan.pdf" class="infolinks"><img src="images/pdf.png"
+                        class="tableimg" alt="PDF-File" /><br>Bühnenplan</a></td>
+            <td class="tdlast"><a href="doc/Skarabaeus_TechRider.pdf" class="infolinks"><img src="images/pdf.png"
+                        class="tableimg" alt="PDF-File" /><br>TechRider</a></td>
         </tr>
     </table>
 
-    <h2 id="Imprint">Imprint</h2>
+    <h2 id="Imprint" class="anchor">Imprint</h2>
 
     <p class="imprint">Heiko Winterstein <br><br>
         Rosenstraße 3A <br>
         91325 Adelsdorf <br><br>
 
         Mailto: <a href="mailto:schoheik@google.com">schoheik@googlemail.com</a><br>
-        Tel.: +49 170 1466892
+        Tel.: <a href="tel:+491701466892">+49 170 1466892</a><br>
     </p>
     <script src="swiped-events.js"></script>
     <script src="script.js"></script>

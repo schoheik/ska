@@ -13,10 +13,8 @@ let startIndex = currentIndex;
 
 if (carousel.children.length % 2 == 0) {
   var odd = 0;
-  console.log("The number is even. gerade");
 } else {
   var odd = 1;
-  console.log("The number is odd. ungerade");
 }
 
 contactbutton.onclick = function () {
@@ -74,7 +72,7 @@ function updateCarousel() {
 
 // Initialisierung des Carousels
 updateCarousel();
-alert('newVersion70')
+alert('Oddi hat sich verspielt')
 
 
 carousel.addEventListener('swiped-left', swipeCarouselleft, true);
@@ -91,19 +89,32 @@ function swipeCarouselright(event) {
   updateCarousel();
 }
 
-/* function alertswipe(event) {
-  alert('swipe')
-} */
-
-
+function offsetanchor() {
+  var corrvertical = document.getElementById("headerback").offsetHeight
+  console.log(corrvertical)
+  const anchorElements = document.querySelectorAll('#myMenue a');
+  anchorElements.forEach(link => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault(); // Verhindert das Standardverhalten des Links
+      const targetId = link.getAttribute('href').substring(1); // ID des Ziel-Elements aus dem href-Attribut extrahieren
+      const targetElement = document.getElementById(targetId); // Das Ziel-Element auswählen
+      if (targetElement) {
+        const offset = corrvertical;
+        const targetOffsetTop = targetElement.offsetTop - offset; // Ziel-Position mit Offset berechnen
+        window.scrollTo({ top: targetOffsetTop, behavior: 'smooth' }); // Scrollen zur Ziel-Position mit Animation
+      }
+    });
+  });
+}
 
 
 
 function openMenue() {
   var menue = document.getElementById("myMenue");
-  if (menue.style.display === "block") {
+  if (menue.style.display === "flex") {
     menue.style.display = "none";
   } else {
-    menue.style.display = "block";
+    menue.style.display = "flex";
   }
+  offsetanchor();
 } 
