@@ -195,13 +195,6 @@ video {
   text-decoration: none;
 }
 
-.headergif {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-
 /* Social Media */
 
 .card_sm {
@@ -214,7 +207,7 @@ video {
   color: red;
   font-size: 1.0rem;
   margin: 10px;
-  width: 300px;
+  width: 200px;
   transition: transform 0.5s;
   /* Übergangseigenschaft für die Vergrößerung */
 }
