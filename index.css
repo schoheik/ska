@@ -82,7 +82,7 @@ video {
   grid-column: 1 / 6;
   align-items: center;
   justify-content: center;
-  display: flex;
+  display: none;
   width: 100%;
 }
 
