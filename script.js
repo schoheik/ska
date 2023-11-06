@@ -61,7 +61,7 @@ function updateCarousel() {
 
 // Initialisierung des Carousels
 updateCarousel();
-alert('newVersion')
+alert('newVersion2')
 
 
 carousel.addEventListener('swiped-left', function(event) {
