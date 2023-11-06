@@ -71,3 +71,23 @@ function updateCarousel() {
 // Initialisierung des Carousels
 updateCarousel();
 
+
+let touchstartX = 0
+let touchendX = 0
+    
+function whichDirection() {
+  if (touchendX < touchstartX) alert("Swipe nach Links");
+  if (touchendX > touchstartX) alert("Swipe nach Rechts");
+}
+
+document.querySelector(".swipeDetector").addEventListener('touchstart', evt => {
+  touchstartX = evt.changedTouches[0].screenX;
+  console.log ("touchstartX", touchstartX);
+})
+
+document.querySelector(".swipeDetector").addEventListener('touchend', evt => {
+  touchendX = evt.changedTouches[0].screenX;
+  console.log ("touchendX", touchendXå);
+  whichDirection();
+});
+
