@@ -61,15 +61,15 @@ function updateCarousel() {
 
 // Initialisierung des Carousels
 updateCarousel();
-alert('newVersion2')
+alert('newVersion3')
 
 
-carousel.addEventListener('swiped-left', function(event) {
-    alert('left')
-}, true);
+carousel.addEventListener('swiped-left', alertswipe, true);
+carousel.addEventListener('swiped-right', alertswipe, true);
 
-carousel.addEventListener('swiped-right', function(event) {
-    alert('right')
-}, true); 
+
+function alertswipe(event) {
+  alert('swipe')
+}
 
 
