@@ -12,10 +12,10 @@ let currentIndex = Math.floor(carousel.children.length / 2);
 let startIndex = currentIndex;
 
 if (carousel.children.length % 2 == 0) {
-  let odd = 0;
+  var odd = 0;
   console.log("The number is even. gerade");
 } else {
-  let odd = 1;
+  var odd = 1;
   console.log("The number is odd. ungerade");
 }
 
@@ -63,9 +63,9 @@ function updateCarousel() {
   }
   const itemWidth = carousel.children[0].offsetWidth;
   if (odd == 1) {
-    const translateX = (currentIndex - startIndex) * itemWidth;
+    var translateX = (currentIndex - startIndex) * itemWidth;
   } else if (odd == 0) {
-    const translateX = (currentIndex - startIndex + 0.5) * itemWidth;
+    var translateX = (currentIndex - startIndex + 0.5) * itemWidth;
   }
   carousel.style.right = translateX + 'px';
   const selectedItem = carousel.children[currentIndex];
@@ -74,7 +74,7 @@ function updateCarousel() {
 
 // Initialisierung des Carousels
 updateCarousel();
-alert('newVersion66')
+alert('newVersion69')
 
 
 carousel.addEventListener('swiped-left', swipeCarouselleft, true);
