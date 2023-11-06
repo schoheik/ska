@@ -2,7 +2,7 @@ var contactpopup = document.getElementById('contact-popup');
 var contactbutton = document.getElementById('openContact');
 var headerlogo = document.getElementById('headerimg');
 
-const smcards = document.querySelectorAll('.card_sm')
+const smcards = document.querySelectorAll('.swipeobj')
 const carousel = document.querySelector('.sm_carousel');
 const main_carousel = document.querySelector('.sm_carousel_container')
 const prevButton = document.getElementById('prev');
