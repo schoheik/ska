@@ -117,10 +117,10 @@ function offsetanchor() {
 
 function openMenue() {
   var menue = document.getElementById("myMenue");
-  if (menue.style.display === "flex") {
-    menue.style.display = "none";
-  } else {
+  if (menue.style.display === "none") {
     menue.style.display = "flex";
+  } else {
+    menue.style.display = "none";
   }
   offsetanchor();
 } 
