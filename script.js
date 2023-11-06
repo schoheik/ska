@@ -2,6 +2,7 @@ var contactpopup = document.getElementById('contact-popup');
 var contactbutton = document.getElementById('openContact');
 var headerlogo = document.getElementById('headerimg');
 
+/* const mainbody = document.querySelector('body') */
 const carousel = document.querySelector('.sm_carousel');
 const main_carousel = document.querySelector('.sm_carousel_container')
 const prevButton = document.getElementById('prev');
@@ -75,8 +76,8 @@ updateCarousel();
 alert('Oddi hat sich verspielt')
 
 
-carousel.addEventListener('swiped-left', swipeCarouselleft, true);
-carousel.addEventListener('swiped-right', swipeCarouselright, true);
+document.body.addEventListener('swiped-left', swipeCarouselleft, true);
+document.body.addEventListener('swiped-right', swipeCarouselright, true);
 
 function swipeCarouselleft(event) {
   event.preventDefault();
@@ -91,7 +92,6 @@ function swipeCarouselright(event) {
 
 function offsetanchor() {
   var corrvertical = document.getElementById("headerback").offsetHeight
-  console.log(corrvertical)
   const anchorElements = document.querySelectorAll('#myMenue a');
   anchorElements.forEach(link => {
     link.addEventListener('click', (event) => {
