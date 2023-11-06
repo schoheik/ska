@@ -64,58 +64,12 @@ updateCarousel();
 alert('newVersion')
 
 
-/* let touchstartX = 0
-let touchendX = 0
-    
-function whichDirection() {
-  if (touchendX < touchstartX) alert("Swipe nach Links");
-  if (touchendX > touchstartX) alert("Swipe nach Rechts");
-}
+carousel.addEventListener('swiped-left', function(event) {
+    alert('left')
+}, true);
 
-carousel.addEventListener('touchstart', evt => {
-  touchstartX = evt.changedTouches[0].screenX;
-})
+carousel.addEventListener('swiped-right', function(event) {
+    alert('right')
+}, true); 
 
-carousel.addEventListener('touchend', evt => {
-  touchendX = evt.changedTouches[0].screenX;
-  whichDirection();
-}); */
-
-
-
-
-var touchstartX = 0;
-var touchstartY = 0;
-var touchendX = 0;
-var touchendY = 0;
-
-carousel.addEventListener('touchstart', function(event) {
-    touchstartX = event.screenX;
-    touchstartY = event.screenY;
-}, false);
-
-carousel.addEventListener('touchend', function(event) {
-    touchendX = event.screenX;
-    touchendY = event.screenY;
-    handleGesure();
-}, false); 
-
-function handleGesure() {
-    var swiped = 'swiped: ';
-    if (touchendX < touchstartX) {
-        alert(swiped + 'left!');
-    }
-    if (touchendX > touchstartX) {
-        alert(swiped + 'right!');
-    }
-    if (touchendY < touchstartY) {
-        alert(swiped + 'down!');
-    }
-    if (touchendY > touchstartY) {
-        alert(swiped + 'left!');
-    }
-    if (touchendY == touchstartY) {
-        alert('tap!');
-    }
-}
 
