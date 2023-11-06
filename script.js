@@ -34,6 +34,19 @@ prevButton.addEventListener('click', () => {
   updateCarousel();
 });
 
+carousel.addEventListener("wheel", turnCarousel, true);
+carousel.addEventListener("swipe", turnCarousel, true);
+
+function turnCarousel(event) {
+  event.preventDefault();
+  if (event.deltaY < 0){
+    currentIndex = (currentIndex + 1) % carousel.children.length;
+  }
+  else if (event.deltaY > 0){
+    currentIndex = (currentIndex - 1 + carousel.children.length) % carousel.children.length;
+  }
+  updateCarousel();}
+
 function updateCarousel() {
   for (let i = 0; i < carousel.children.length; i++) {
     const item = carousel.children[i];
@@ -41,7 +54,9 @@ function updateCarousel() {
 }
 
   /* const itemWidth = 100 / carousel.children.length; */
-  const itemWidth = 420;
+  /* const itemWidth = 420; */
+  /* const itemWidth = carousel.offsetWidth / carousel.children.length; */
+  const itemWidth = carousel.children[0].offsetWidth;
   const translateX = (currentIndex-startIndex)*itemWidth;
 
   /* const translateX = (currentIndex-3)*itemWidth; */
