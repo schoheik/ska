@@ -61,10 +61,10 @@ function updateCarousel() {
 
 // Initialisierung des Carousels
 updateCarousel();
-/* alert('newVersion') */
+alert('newVersion')
 
 
-let touchstartX = 0
+/* let touchstartX = 0
 let touchendX = 0
     
 function whichDirection() {
@@ -79,24 +79,22 @@ carousel.addEventListener('touchstart', evt => {
 carousel.addEventListener('touchend', evt => {
   touchendX = evt.changedTouches[0].screenX;
   whichDirection();
-});
+}); */
 
 
 
 
-/* var touchstartX = 0;
+var touchstartX = 0;
 var touchstartY = 0;
 var touchendX = 0;
 var touchendY = 0;
 
-var gesuredZone = document.getElementById('gesuredZone');
-
-gesuredZone.addEventListener('touchstart', function(event) {
+carousel.addEventListener('touchstart', function(event) {
     touchstartX = event.screenX;
     touchstartY = event.screenY;
 }, false);
 
-gesuredZone.addEventListener('touchend', function(event) {
+carousel.addEventListener('touchend', function(event) {
     touchendX = event.screenX;
     touchendY = event.screenY;
     handleGesure();
@@ -121,4 +119,3 @@ function handleGesure() {
     }
 }
 
- */
