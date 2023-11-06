@@ -12,7 +12,7 @@
 <body>
     <div class='headerback'>
         <img src="images/booknow.png" class='headercontact' alt="Booking" id="openContact">
-        <img title="Headerimg" src="images/Logo_rot_schwarz.png" alt="Logo" class="headerimg">
+        <img id="headerimg" title="Headerimg" src="images/Logo_rot_schwarz.png" alt="Logo" class="headerimg" onclick="openMenue()">
         <div class='headersm'>
             <a href='https://www.instagram.com/skarabaeus.band/'><img src="images/insta2.jpg" class='headersmelement'
                     alt="Booking"></a>
@@ -34,6 +34,27 @@
                 href="mailto:schoheik@google.com">schoheik@googlemail.com</a> <br>
         </div>
     </div>
+
+
+    <div class="topnav">
+        <a href="#home" class="active">Logo</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myMenue">
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+
+
+
+
+
 
     <!-- <img src="images/GifBend.gif" class="headergif" alt="Gif" /> -->
     <!-- <video autoplay muted id="myVideo">

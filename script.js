@@ -1,5 +1,6 @@
 var contactpopup = document.getElementById('contact-popup');
 var contactbutton = document.getElementById('openContact');
+var headerlogo = document.getElementById('headerimg');
 
 const carousel = document.querySelector('.sm_carousel');
 const main_carousel = document.querySelector('.sm_carousel_container')
@@ -61,16 +62,24 @@ function updateCarousel() {
 
 // Initialisierung des Carousels
 updateCarousel();
-alert('newVersion')
+alert('newVersion0')
 
 
-carousel.addEventListener('swiped-left', alertswipe, true);
-carousel.addEventListener('swiped-right', alertswipe, true);
+carousel.addEventListener('swiped-left', swipeCarouselleft, true);
+carousel.addEventListener('swiped-right', swipeCarouselright, true);
 
-
-function alertswipe(event) {
-  alert('swipe')
+function swipeCarouselleft(event) {
+  currentIndex = (currentIndex + 1) % carousel.children.length;
+  updateCarousel();
 }
+function swipeCarouselright(event) {
+  currentIndex = (currentIndex - 1 + carousel.children.length) % carousel.children.length;
+  updateCarousel();
+}
+
+/* function alertswipe(event) {
+  alert('swipe')
+} */
 
 
 
