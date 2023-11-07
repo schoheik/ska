@@ -200,9 +200,7 @@ video {
 }
 
 /* Social Media */
-.swipeobj{
-  min-width:auto;
-}
+
 .card_sm {
   max-width: 50%;
   max-height: 50%;
@@ -215,14 +213,20 @@ video {
   margin: 10px;
   width: 200px;
   transition: transform 0.5s;
+  padding: 1%;
   /* Übergangseigenschaft für die Vergrößerung */
 }
 
-.card_sm.selected {
+/* .card_sm.selected {
   max-width: 75%;
   max-height: 75%;
   transform: scale(1.2);
-  /* Vergrößerung für das ausgewählte Item */
+} */
+
+.card_sm:hover {
+  max-width: 75%;
+  max-height: 75%;
+  transform: scale(1.05);
 }
 
 .sm_carousel_container {

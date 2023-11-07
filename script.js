@@ -42,9 +42,9 @@ prevButton.addEventListener('click', () => {
   updateCarousel();
 });
 
-carousel.addEventListener("wheel", turnCarousel, true);
+/* carousel.addEventListener("wheel", turnCarousel, true); */
 
-function turnCarousel(event) {
+/* function turnCarousel(event) {
   event.preventDefault();
   if (event.deltaY < 0) {
     currentIndex = (currentIndex + 1) % carousel.children.length;
@@ -53,7 +53,7 @@ function turnCarousel(event) {
     currentIndex = (currentIndex - 1 + carousel.children.length) % carousel.children.length;
   }
   updateCarousel();
-}
+} */
 
 function updateCarousel() {
   for (let i = 0; i < carousel.children.length; i++) {
@@ -126,3 +126,15 @@ function openMenue() {
 } 
 
 openMenue();
+
+
+$(document).ready(function () {
+  $(".sm_carousel").click(function () {
+      $(this).hide();
+  });
+
+  // Show lightbox when clicking on a div
+  $(".your-div-selector").click(function () {
+      $(this).find(".sm_carousel").show();
+  });
+});
