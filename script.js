@@ -2,7 +2,7 @@ var contactpopup = document.getElementById('contact-popup');
 var contactbutton = document.getElementById('openContact');
 var headerlogo = document.getElementById('headerimg');
 
-const smcards = document.querySelectorAll('.swipeobj')
+const smcards = document.querySelectorAll('.card_sm')
 const carousel = document.querySelector('.sm_carousel');
 const main_carousel = document.querySelector('.sm_carousel_container')
 const prevButton = document.getElementById('prev');
@@ -128,13 +128,8 @@ function openMenue() {
 openMenue();
 
 
-$(document).ready(function () {
-  $(".sm_carousel").click(function () {
-      $(this).hide();
-  });
+var mc = new Hammer(carousel);
 
-  // Show lightbox when clicking on a div
-  $(".your-div-selector").click(function () {
-      $(this).find(".sm_carousel").show();
-  });
+mc.on("panleft panright tap press", function(ev) {
+  alert(ev.type +" gesture detected.");
 });
