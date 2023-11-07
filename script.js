@@ -73,7 +73,7 @@ function updateCarousel() {
 
 // Initialisierung des Carousels
 updateCarousel();
-alert('Oddi hat sich nicht verspielt')
+alert('Heiko hat sich nicht verspielt')
 
 
 /* document.body.addEventListener('swiped-left', swipeCarouselleft, true);

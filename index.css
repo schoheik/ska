@@ -213,7 +213,7 @@ video {
   margin: 10px;
   width: 200px;
   transition: transform 0.5s;
-  padding: 1%;
+  padding: 3%;
   /* Übergangseigenschaft für die Vergrößerung */
 }
 
