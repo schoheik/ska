@@ -213,7 +213,9 @@ video {
   margin: 10px;
   width: 200px;
   transition: transform 0.5s;
-  padding: 5%;
+  /* padding: 5%; */
+  padding: 5px;
+  flex: 1;
   /* Übergangseigenschaft für die Vergrößerung */
 }
 
