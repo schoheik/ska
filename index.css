@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'SKA';
-  /*   src: url('font/feast_of_flesh_bb/FEASFBRG.TTF'); */
-  src: url('font/Crimes\ Times\ Six.ttf');
+    src: url('font/feast_of_flesh_bb/FEASFBRG.TTF');
+  /* src: url('font/Crimes\ Times\ Six.ttf'); */
 }
 
 html {
@@ -14,6 +14,7 @@ h1 {
   color: rgb(255, 0, 0);
   text-align: center;
   font-size: 3em;
+  font-weight: normal;
 }
 
 h2 {
@@ -22,12 +23,21 @@ h2 {
   border: thin solid;
   color: rgb(255, 0, 0);
   text-align: center;
+  font-weight: normal;
 }
 
 p {
   font-family: courier;
   color: rgb(255, 255, 255);
   font-size: 1.2em;
+  max-width: 800px;
+  /* text-align: center; */
+  margin: auto;
+}
+
+table {
+  max-width: 800px;
+  margin: auto;
 }
 
 body {
@@ -53,7 +63,7 @@ video {
   width: auto;
   align-self: auto;
 
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   z-index: 999;
 
@@ -78,23 +88,22 @@ video {
 .topnav {
   overflow: hidden;
   background-color: black;
-  position: relative;
+  /* position: relative; */
+  position: sticky;
+  top: 0;
+  z-index: 99;
   grid-column: 1 / 6;
   align-items: center;
   justify-content: center;
-  display: none;
+  /* display: none; */
+  display: flex;
   width: 100%;
 }
 
 .topnav_element {
-/*   border-style: solid;
-  border-width: 0.01rem;
-  border-color: red; */
   font-size: 1.2em;
   justify-content: center;
   align-items: center;
-  /* min-width: 15%;
-  min-height: 1.5rem; */
   text-align: center;
 }
 

@@ -8,6 +8,45 @@ const main_carousel = document.querySelector('.sm_carousel_container')
 const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
 
+
+
+
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'vertical',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    /* el: '.swiper-pagination', */
+    el: '.swiper-dynamic',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+/*   scrollbar: {
+    el: '.swiper-scrollbar',
+  }, */
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* let currentIndex = 0; */
 let currentIndex = Math.floor(carousel.children.length / 2);
 let startIndex = currentIndex;
@@ -73,31 +112,13 @@ function updateCarousel() {
 
 // Initialisierung des Carousels
 updateCarousel();
-alert('Heiko hat sich nicht verspielt')
-
 
 /* document.body.addEventListener('swiped-left', swipeCarouselleft, true);
 document.body.addEventListener('swiped-right', swipeCarouselright, true); */
 
 
-smcards.forEach(function(card) {
-  card.addEventListener('swiped-left', swipeCarouselleft, true);
-  card.addEventListener('swiped-right', swipeCarouselright, true);
-});
-
-function swipeCarouselleft(event) {
-  event.preventDefault();
-  currentIndex = (currentIndex + 1) % carousel.children.length;
-  updateCarousel();
-}
-function swipeCarouselright(event) {
-  event.preventDefault();
-  currentIndex = (currentIndex - 1 + carousel.children.length) % carousel.children.length;
-  updateCarousel();
-}
-
 function offsetanchor() {
-  var corrvertical = document.getElementById("headerback").offsetHeight
+  var corrvertical = document.getElementById("myMenue").offsetHeight
   const anchorElements = document.querySelectorAll('#myMenue a');
   anchorElements.forEach(link => {
     link.addEventListener('click', (event) => {
@@ -117,19 +138,13 @@ function offsetanchor() {
 
 function openMenue() {
   var menue = document.getElementById("myMenue");
-  if (menue.style.display === "flex") {
-    menue.style.display = "none";
-  } else {
+  if (menue.style.display === "none") {
     menue.style.display = "flex";
+  } else {
+    menue.style.display = "none";
   }
   offsetanchor();
 } 
+offsetanchor();
 
-openMenue();
-
-
-var mc = new Hammer(carousel);
-
-mc.on("panleft panright tap press", function(ev) {
-  alert(ev.type +" gesture detected.");
-});
+/* openMenue(); */
