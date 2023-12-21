@@ -9,42 +9,15 @@ const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
 
 
-
-
-
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
+var swiper = new Swiper(".swiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
   loop: true,
-
-  // If we need pagination
   pagination: {
-    /* el: '.swiper-pagination', */
-    el: '.swiper-dynamic',
+    el: ".swiper-pagination",
+    clickable: true,
   },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-/*   scrollbar: {
-    el: '.swiper-scrollbar',
-  }, */
 });
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* let currentIndex = 0; */
@@ -148,3 +121,17 @@ function openMenue() {
 offsetanchor();
 
 /* openMenue(); */
+
+
+console.log('test');
+
+/* let swwidth = swiper.slides[swiper.activeIndex].clientWidth
+if (swwidth>33){
+  console.log('if okay');
+  swiper.params.slidesPerView = 1;
+}
+else { 
+  console.log('if not okay');
+  console.log(swwidth);
+  console.log(window.screen.width);
+} */
